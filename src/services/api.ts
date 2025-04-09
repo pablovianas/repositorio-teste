@@ -9,7 +9,8 @@ export const getCep = async (cep: string) => {
         if (!response.ok) throw new Error("Erro ao buscar CEP")
 
         return await response.json()
+        
     } catch (error) {
-        console.log('ERRO:', error)
+        console.log('ERRO AO consultar a API:', error)
     }
 }
